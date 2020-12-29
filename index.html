@@ -46,7 +46,7 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1Cargo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
@@ -110,7 +110,7 @@
             </div>
         </div>
     </div>
-    <!--MENU-->
+    <!--SLIDE1-->
     <div 
     class="MENU"
     style="
@@ -118,6 +118,7 @@
     background-size: cover;
     background-position: center; 
     color: floralwhite;">
+        <!--MENU-->
         <div 
         style="border-bottom: rgb(243, 243, 243) 1px solid;">
             <div class="container">
@@ -193,53 +194,65 @@
                             НА РАСЧЕТ СТОИМОСТИ ДОСТАВКИ
                         </p>
                     </div>
-                    <div style="padding: 15px;">
-                        <div class="d-flex flex-column bd-highlight mb-3">
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше имя..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше телефон..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше e-mail..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше сообщение..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <button type="submit"
-                                style="border: 0;
-                                background-color: #e93b3b;
-                                padding: 15px;
-                                padding-left: 30px;
-                                padding-right: 30px;
-                                color: rgb(243, 243, 243);
-                                border-radius: 3px;">
-                                Отправить заявку</button>
+                    <form class="D" action="send.php" method="post">
+                        <div style="padding: 15px;">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    required
+                                    name='name'
+                                    placeholder="Ваше имя..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    required
+                                    name='phone'
+                                    placeholder="Ваше телефон..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    required
+                                    name='email'
+                                    placeholder="Ваше e-mail..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    required
+                                    name='message'
+                                    placeholder="Ваше сообщение..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <input type="hidden" name="T" value="O">
+                                <div class="pt-2 bd-highlight">
+                                    <button type="submit"
+                                    name="submite"
+                                    style="border: 0;
+                                    background-color: #e93b3b;
+                                    padding: 15px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    color: rgb(243, 243, 243);
+                                    border-radius: 3px;">
+                                    Отправить заявку</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="pl-3 flex-grow-1 bd-highlight">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qefc-24fpJA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -251,7 +264,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!--FACT-->
     <div 
@@ -409,61 +421,72 @@
                             ЭКСПРЕСС ДОСТАВКА
                         </h5>
                     </div>
-                    <div style="padding: 15px;">
-                        <div class="d-flex flex-column bd-highlight mb-3">
-                            <div class="pt-1 bd-highlight">
-                                <img src="img/plane2.png" alt="">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <h5>
-                                    ЗА 9 ДНЕЙ ИЗ ГАНЧЖОУ
-                                </h5>
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <h3>
-                                    9$-1кг
-                                </h3>
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше имя..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше телефон..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше e-mail..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <button type="submit"
-                                style="border: 0;
-                                background-color:#e93b3b;
-                                padding: 15px;
-                                padding-left: 30px;
-                                padding-right: 30px;
-                                color: rgb(243, 243, 243);
-                                border-radius: 3px;">
-                                Отправить заявку</button>
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <p>Наш менеджер перезвонит вам<br>в ближайшее время</p>
+                    <form action="send.php" method="post">
+                        <div style="padding: 15px;">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="pt-1 bd-highlight">
+                                    <img src="img/plane2.png" alt="">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <h5>
+                                        ЗА 9 ДНЕЙ ИЗ ГАНЧЖОУ
+                                    </h5>
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <h3>
+                                        9$-1кг
+                                    </h3>
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name ='name'
+                                    required
+                                    placeholder="Ваше имя..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name ='phone'
+                                    required
+                                    placeholder="Ваше телефон..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name ='email'
+                                    required
+                                    placeholder="Ваше e-mail..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <input type="hidden" name="T" value="H">
+                                <input type="hidden" name="H" value='H1'>
+                                <div class="pt-2 bd-highlight">
+                                    <button type="submit"
+                                    name="submit"
+                                    style="border: 0;
+                                    background-color:#e93b3b;
+                                    padding: 15px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    color: rgb(243, 243, 243);
+                                    border-radius: 3px;">
+                                    Отправить заявку</button>
+                                </div>                                
+                                <div class="pt-2 bd-highlight">
+                                    <p>Наш менеджер перезвонит вам<br>в ближайшее время</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="bd-highlight"
                 style="text-align: center;
@@ -475,61 +498,72 @@
                             АВТО-Ж.Д ДОСТАВКА
                         </h5>
                     </div>
-                    <div style="padding: 15px;">
-                        <div class="d-flex flex-column bd-highlight mb-3">
-                            <div class="pt-1 bd-highlight">
-                                <img src="img/train.png" alt="">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <h5>
-                                    ЗА 18 ДНЕЙ ИЗ ГАНЧЖОУ
-                                </h5>
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <h3>
-                                    3$-1кг
-                                </h3>
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше имя..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше телефон..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше e-mail..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <button type="submit"
-                                style="border: 0;
-                                background-color: #e93b3b;
-                                padding: 15px;
-                                padding-left: 30px;
-                                padding-right: 30px;
-                                color: rgb(243, 243, 243);
-                                border-radius: 3px;">
-                                Отправить заявку</button>
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <p>Наш менеджер перезвонит вам<br>в ближайшее время</p>
+                    <form action="send.php" method="post">
+                        <div style="padding: 15px;">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="pt-1 bd-highlight">
+                                    <img src="img/train.png" alt="">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <h5>
+                                        ЗА 18 ДНЕЙ ИЗ ГАНЧЖОУ
+                                    </h5>
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <h3>
+                                        3$-1кг
+                                    </h3>
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name='name'
+                                    required
+                                    placeholder="Ваше имя..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name='phone'
+                                    required
+                                    placeholder="Ваше телефон..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name='email'
+                                    required
+                                    placeholder="Ваше e-mail..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <input type="hidden" name="T" value="H">
+                                <input type="hidden" name="H" value="H2">
+                                <div class="pt-2 bd-highlight">
+                                    <button type="submit"
+                                    name="submite"
+                                    style="border: 0;
+                                    background-color: #e93b3b;
+                                    padding: 15px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    color: rgb(243, 243, 243);
+                                    border-radius: 3px;">
+                                    Отправить заявку</button>
+                                </div>
+                                <div class="pt-2 bd-highlight">
+                                    <p>Наш менеджер перезвонит вам<br>в ближайшее время</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="bd-highlight"
                 style="text-align: center;
@@ -541,61 +575,72 @@
                             ДОСТАВКА МОРЕМ
                         </h5>
                     </div>
-                    <div style="padding: 15px;">
-                        <div class="d-flex flex-column bd-highlight mb-3">
-                            <div class="pt-1 bd-highlight">
-                                <img src="img/ship.png" alt="">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <h5>
-                                    ЗА 35 ДНЕЙ ИЗ ИУ
-                                </h5>
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <h3>
-                                    2$-1кг
-                                </h3>
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше имя..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше телефон..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше e-mail..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <button type="submit"
-                                style="border: 0;
-                                background-color:#e93b3b;
-                                padding: 15px;
-                                padding-left: 30px;
-                                padding-right: 30px;
-                                color: rgb(243, 243, 243);
-                                border-radius: 3px;">
-                                Отправить заявку</button>
-                            </div>
-                            <div class="pt-2 bd-highlight">
-                                <p>Наш менеджер перезвонит вам<br>в ближайшее время</p>
+                    <form action="send.php" method="post">
+                        <div style="padding: 15px;">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="pt-1 bd-highlight">
+                                    <img src="img/ship.png" alt="">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <h5>
+                                        ЗА 35 ДНЕЙ ИЗ ИУ
+                                    </h5>
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <h3>
+                                        2$-1кг
+                                    </h3>
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name="name"
+                                    required
+                                    placeholder="Ваше имя..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name="phone"
+                                    required
+                                    placeholder="Ваше телефон..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <div class="pt-1 bd-highlight">
+                                    <input type="text"
+                                    name="email"
+                                    required
+                                    placeholder="Ваше e-mail..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <input type="hidden" name="T" value="H">
+                                <input type="hidden" name="H" value="H3">
+                                <div class="pt-2 bd-highlight">
+                                    <button type="submit"
+                                    name="submite"
+                                    style="border: 0;
+                                    background-color:#e93b3b;
+                                    padding: 15px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    color: rgb(243, 243, 243);
+                                    border-radius: 3px;">
+                                    Отправить заявку</button>
+                                </div>
+                                <div class="pt-2 bd-highlight">
+                                    <p>Наш менеджер перезвонит вам<br>в ближайшее время</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>                
             </div>
         </div>
@@ -945,7 +990,58 @@
                     <h3>Отзывы наших клиентов</h3>
                 </div>
             </div>
-
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center p-2">
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev" style="position: relative;">
+                                <img src="img/leftButton.png" alt="">
+                            </a>
+                            <div class="bd-highlight">
+                                <div style="background-image: url(img/fb1.png); width: 120px; height: 120px; border-radius: 100%;"></div> 
+                            </div>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="position: relative;">
+                                <img src="img/rightButton.png" alt="">
+                            </a>
+                        </div>
+                        <div class="p-2" style="text-align: center;">
+                            <h6>
+                                Ольга - директор тур.агентства "Курортный роман"
+                            </h6>
+                            <a href="" style="color: tomato;">
+                                www.kurort_roman.ru
+                            </a>
+                            <p>
+                                Sed neque nisi, consequat nec justo mollis, egestas consectetur sapien. Praesent eget turpis vitae tellus aliquam condimentum nec et tortor. Fusce ut quam vitae erat commodo consequat at ac eros. Ut scelerisque velit quis justo finibus venenatis. Fusce ut arcu at ipsum fermentum viverra eu in velit. Phasellus dolor quam, imperdiet in dictum sit amet, dapibus id ipsum. Donec nibh ligula, maximus in nunc non, lacinia facilisis justo. Morbi placerat massa eu metus consequat lacinia. Cras eu odio vel ex dapibus luctus. Sed elementum dolor id magna egestas congue id eget augue. Nulla ut diam cursus, dapibus diam nec, semper elit. Aliquam quis augue elit. Nam tempor erat id molestie malesuada. Nullam et velit ut libero ultricies fermentum. Proin rutrum risus nec eleifend interdum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center p-2">
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev" style="position: relative;">
+                                <img src="img/leftButton.png" alt="">
+                            </a>
+                            <div class="bd-highlight">
+                                <div style="background-image: url(img/M1.png); width: 120px; height: 120px; border-radius: 100%;"></div> 
+                            </div>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="position: relative;">
+                                <img src="img/rightButton.png" alt="">
+                            </a>
+                        </div>
+                        <div class="p-2" style="text-align: center;">
+                            <h6>
+                                Ольга - директор тур.агентства "Курортный роман"
+                            </h6>
+                            <a href="" style="color: tomato;">
+                                www.kurort_roman.ru
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum, quam sit amet malesuada vulputate, tortor dui accumsan enim, in malesuada dolor quam et lorem. Etiam sagittis nibh a tortor auctor, eu auctor ligula convallis. Ut auctor risus ut odio condimentum cursus. Duis bibendum enim sed sem blandit finibus. Mauris finibus turpis id eros auctor, et pulvinar arcu pharetra. Nulla eget mauris nec leo aliquam luctus eget porta sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce facilisis massa et lacus faucibus rutrum. Nunc vitae odio porttitor, laoreet massa non, gravida ex. Aliquam quis odio cursus, sagittis enim sit amet, elementum turpis. In pulvinar tempor sem non aliquet. Sed blandit urna vitae risus aliquet, vel vestibulum nunc eleifend. In ullamcorper enim sit amet malesuada consequat. Curabitur facilisis dui vel quam mollis blandit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
         <!--SKIP-->
@@ -1438,14 +1534,13 @@
             </div>
         </div>
     </div>
-        <!--CHECK RESULT-->
+        <!--CHECK RESULT
     <div>
         <div class="container">
             <div class="row">
-                
             </div>
         </div>
-    </div>
+    </div-->
         <!--ADD SERVICES-->
     <div style="background-color: #f3f3f3">
         <div class="container" style="padding: 2% 0;">
@@ -1487,6 +1582,95 @@
                     <h3>Новости</h3>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-4 p-2">
+                    <div style="
+                    background-image: url(img/n23n2.png);
+                    width: auto;
+                    height: 200px;
+                    background-position: center;">
+                    </div>
+                    <div style="padding: 0px;">
+                        <div style="
+                        float:left;
+                        width: auto;
+                        height: auto;">
+                            <div class="fluid" style="
+                            background-color: white;
+                            border-radius: 100%; 
+                            padding: 10px;
+                            margin: 10px; 
+                            text-align: center;
+                            width: 80px;
+                            color:crimson;
+                            position: relative;
+                            bottom: 50px;">
+                                <span style="font-size: x-large;">23</span>
+                                <br>
+                                мая
+                            </div>
+                            <div style="
+                            background-color: gray;
+                            margin: 0 49px 30px;
+                            height: 100px;
+                            width: 2px;">
+                            </div>
+                        </div>
+                        <p style="
+                        padding: 10px; 
+                        margin: 0;
+                        width: 274px;
+                        float: right;">
+                            <span style="color:crimson;">Срочные новости границы<br></span>
+                            "1kargo" уведомляет вас о том, что на таможенных пропускных пунктах проходит совместная российско-казахская имнспекция таможенных переходов России в Казахтан.
+                            Не исключено, что в связи с этим в ближайшее время произойдет повышение тарифных ставок на офромление грузов.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4 p-2">
+                    <div style="
+                    background-image: url(img/n23n1.png);
+                    width: auto;
+                    height: 200px;
+                    background-position: center;">
+                    </div>
+                    <div style="padding: 0px;">
+                        <div style="
+                        float:left;
+                        width: auto;
+                        height: auto;">
+                            <div class="fluid" style="
+                            background-color: white;
+                            border-radius: 100%; 
+                            padding: 10px;
+                            margin: 10px; 
+                            text-align: center;
+                            width: 80px;
+                            color:crimson;
+                            position: relative;
+                            bottom: 50px;">
+                                <span style="font-size: x-large;">23</span>
+                                <br>
+                                мая
+                            </div>
+                            <div style="
+                            background-color: gray;
+                            margin: 0 49px 30px;
+                            height: 100px;
+                            width: 2px;">
+                            </div>
+                        </div>
+                        <p style="
+                        padding: 10px; 
+                        margin: 0;
+                        width: 274px;
+                        float: right;">
+                            <span style="color:crimson;">ЭЛЕКТРОННЫЕ ПРЕДМЕТЫ<br></span>
+                            Постоянно развивающееся производства в Поднобесной ежегодно балуют покупателей новинкой и трендами, способными упростить жизнь. В последний год темной многой выставок и семинаров становились самые различные направления - от промышленности до домашних товаров 
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="d-flex justify-content-center">
                 <div class="p-2 bd-highlight">
                     <button type="submit"
@@ -1523,57 +1707,69 @@
                             НАПИШИТЕ НАМ!
                         </p>
                     </div>
-                    <div style="padding: 15px;">
-                        <div class="d-flex flex-column bd-highlight mb-3">
-                            <div class="pt-1 bd-highlight">
-                                <div class="d-flex bd-highlight">
-                                    <div class="p-1 bd-highlight">
-                                        <input type="text"
-                                        placeholder="Ваше имя..."
-                                        style="height: 40px;
-                                        padding: 20px;
-                                        border: lightgray solid 1;
-                                        width: 100%;">
-                                    </div>
-                                    <div class="p-1 bd-highlight">
-                                        <input type="text"
-                                        placeholder="Ваше телефон..."
-                                        style="height: 40px;
-                                        padding: 20px;
-                                        border: lightgray solid 1;
-                                        width: 100%;">
-                                    </div>
-                                    <div class="p-1 bd-highlight">
-                                        <input type="text"
-                                        placeholder="Ваше e-mail..."
-                                        style="height: 40px;
-                                        padding: 20px;
-                                        border: lightgray solid 1;
-                                        width: 100%;">
+                    <form class="D2" action="send.php" method="post">
+                        <div style="padding: 15px;">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="pt-1 bd-highlight">
+                                    <div class="d-flex bd-highlight">
+                                        <div class="p-1 bd-highlight">
+                                            <input type="text"
+                                            name = "name"
+                                            required
+                                            placeholder="Ваше имя..."
+                                            style="height: 40px;
+                                            padding: 20px;
+                                            border: lightgray solid 1;
+                                            width: 100%;">
+                                        </div>
+                                        <div class="p-1 bd-highlight">
+                                            <input type="text"
+                                            name = "phone"
+                                            required
+                                            placeholder="Ваше телефон..."
+                                            style="height: 40px;
+                                            padding: 20px;
+                                            border: lightgray solid 1;
+                                            width: 100%;">
+                                        </div>
+                                        <div class="p-1 bd-highlight">
+                                            <input type="text"
+                                            name = "email"
+                                            required
+                                            placeholder="Ваше e-mail..."
+                                            style="height: 40px;
+                                            padding: 20px;
+                                            border: lightgray solid 1;
+                                            width: 100%;">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="p-1 bd-highlight">
-                                <input type="text"
-                                placeholder="Ваше сообщение..."
-                                style="height: 40px;
-                                padding: 20px;
-                                border: lightgray solid 1;
-                                width: 100%;">
-                            </div>
-                            <div class="p-2 bd-highlight">
-                                <button type="submit"
-                                style="border: 0;
-                                background-color: #e93b3b;
-                                padding: 15px;
-                                padding-left: 30px;
-                                padding-right: 30px;
-                                color: rgb(243, 243, 243);
-                                border-radius: 3px;">
-                                Отправить заявку</button>
+                                <div class="p-1 bd-highlight">
+                                    <input type="text"
+                                    name = "message"
+                                    required
+                                    placeholder="Ваше сообщение..."
+                                    style="height: 40px;
+                                    padding: 20px;
+                                    border: lightgray solid 1;
+                                    width: 100%;">
+                                </div>
+                                <input type="hidden" name="T" value="Q">
+                                <div class="p-2 bd-highlight">
+                                    <button type="submit"
+                                    name="submite"
+                                    style="border: 0;
+                                    background-color: #e93b3b;
+                                    padding: 15px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    color: rgb(243, 243, 243);
+                                    border-radius: 3px;">
+                                    Отправить заявку</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1644,11 +1840,12 @@
             </div>
         </div>
     </div>
-    <div style="background-color: darkslategrey; color: floralwhite;">
-        <div class="container">
-            
-        </div>
-    </div>
         <!--END-->
+    <!--СКРИПТЫ-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
